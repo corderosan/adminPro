@@ -8,6 +8,9 @@ import { APP_ROUTES } from './app.route';
 
 // Modulos
 import { PagesModule } from './pages/pages.modulo';
+// import { IncrementadorComponent } from './components/incrementador/incrementador.component';
+import { FormsModule } from '@angular/forms';
+// import { GraficoDonaComponent } from './components/grafico-dona/grafico-dona.component';
 
 
 @NgModule({
@@ -15,9 +18,11 @@ import { PagesModule } from './pages/pages.modulo';
     AppComponent,
     LoginComponent,
     RegisterComponent,
+    //GraficoDonaComponent,
+    // IncrementadorComponent,
   ],
   imports: [
-    BrowserModule, APP_ROUTES, PagesModule
+    BrowserModule, APP_ROUTES, PagesModule, FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
