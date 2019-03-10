@@ -10,6 +10,7 @@ import { APP_ROUTES } from './app.route';
 import { PagesModule } from './pages/pages.modulo';
 // import { IncrementadorComponent } from './components/incrementador/incrementador.component';
 import { FormsModule } from '@angular/forms';
+import { SettingsService } from './services/settings.service';
 // import { GraficoDonaComponent } from './components/grafico-dona/grafico-dona.component';
 
 
@@ -24,7 +25,7 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule, APP_ROUTES, PagesModule, FormsModule
   ],
-  providers: [],
+  providers: [SettingsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
