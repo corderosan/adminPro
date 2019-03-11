@@ -10,7 +10,8 @@ import { APP_ROUTES } from './app.route';
 import { PagesModule } from './pages/pages.modulo';
 // import { IncrementadorComponent } from './components/incrementador/incrementador.component';
 import { FormsModule } from '@angular/forms';
-import { SettingsService } from './services/settings.service';
+import { SettingsService } from './services/settings/settings.service';
+import { ServiceModule } from './services/service.module';
 // import { GraficoDonaComponent } from './components/grafico-dona/grafico-dona.component';
 
 
@@ -23,7 +24,7 @@ import { SettingsService } from './services/settings.service';
     // IncrementadorComponent,
   ],
   imports: [
-    BrowserModule, APP_ROUTES, PagesModule, FormsModule
+    BrowserModule, APP_ROUTES, PagesModule, FormsModule, ServiceModule
   ],
   providers: [SettingsService],
   bootstrap: [AppComponent]

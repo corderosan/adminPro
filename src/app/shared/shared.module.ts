@@ -3,9 +3,14 @@ import { NopagefoundComponent } from '../shared/nopagefound/nopagefound.componen
 import { HeaderComponent } from '../shared/header/header.component';
 import { SidebarComponent } from '../shared/sidebar/sidebar.component';
 import { BreadcrumbsComponent } from '../shared/breadcrumbs/breadcrumbs.component';
+import { RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common';
 
 
 @NgModule({
+    imports: [
+        RouterModule, CommonModule
+    ],
     declarations : [
     HeaderComponent,
     SidebarComponent,
