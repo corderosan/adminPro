@@ -12,6 +12,7 @@ import { PagesModule } from './pages/pages.modulo';
 import { FormsModule } from '@angular/forms';
 import { SettingsService } from './services/settings/settings.service';
 import { ServiceModule } from './services/service.module';
+import { RxjsComponent } from './pages/rxjs/rxjs.component';
 // import { GraficoDonaComponent } from './components/grafico-dona/grafico-dona.component';
 
 
@@ -20,6 +21,7 @@ import { ServiceModule } from './services/service.module';
     AppComponent,
     LoginComponent,
     RegisterComponent,
+    RxjsComponent,
     //GraficoDonaComponent,
     // IncrementadorComponent,
   ],
