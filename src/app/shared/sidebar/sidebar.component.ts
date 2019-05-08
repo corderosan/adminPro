@@ -8,20 +8,7 @@ import { SidebarService } from 'src/app/services/service.index';
 })
 export class SidebarComponent {
 
-  menu: any = [
-    {
-    titulo: 'Principal',
-    icono: 'mdi mdi-gaude',
-    submenu: [
-      {titulo: 'DashBoard', url: '/dashboard'},
-      {titulo: 'ProgressBar', url: '/progress'},
-      {titulo: 'Graficas', url: 'graficas1'},
-    ]
-  }
-  ];
-
-  constructor( public _sideBar: SidebarService) { }
-
+  constructor( public _sidebar: SidebarService) { }
 }
 
 
